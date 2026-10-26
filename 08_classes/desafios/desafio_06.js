@@ -4,14 +4,18 @@ class Produto {
         this.preco = preco;
     }
 
-    moeda(valor){
-      return  valor.toLocaleString("pt-BR", {
+    moeda(valor) {
+        return valor.toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL"
         })
     }
     atualizarPreco(novoPreco) {
-      return  this.preco = novoPreco;
+        if (novoPreco <= 0) {
+            console.log("Valor inválildo:", this.moeda(novoPreco));
+            console.log("Preço sem alterações:", this.moeda(this.preco));
+            return false;
+        }
     }
 
     exibir() {
@@ -19,9 +23,9 @@ class Produto {
     }
 }
 
-const produto1 = new Produto("Computador",2500);
+const produto1 = new Produto("Computador", 2500);
 
-produto1.preco = 3300;
+produto1.atualizarPreco(-550.50);
 
 
 
