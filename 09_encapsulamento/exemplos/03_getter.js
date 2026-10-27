@@ -9,9 +9,11 @@ class Produto {
     get preco() {
         return this.#preco;
     }
+
+    
 }
 
-const produto = new Produto("Monitor", 700);
+const produto1 = new Produto("Monitor", 700);
 
-console.log(produto.nome);
-console.log(produto.preco);
+console.log(produto1.nome);
+console.log(produto1.preco);

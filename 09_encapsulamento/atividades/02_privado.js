@@ -20,7 +20,7 @@ class Produto {
 
 }
 
-const produto = new Produto("Teclado", 175.85);
+const produto = new Produto("Teclado", 1175.85);
 
 produto.preco = -100
 produto.apresentar();

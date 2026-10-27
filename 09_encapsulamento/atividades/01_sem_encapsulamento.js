@@ -1,7 +1,17 @@
 class Produto {
+
+    #preco;
     constructor(nome, preco) {
         this.nome = nome;
-        this.preco = preco;
+        this.#preco = preco;
+    }
+
+    get preco(){
+        
+    }
+
+    apresentar() {
+        console.log(this.nome,this.#preco);
     }
 }
 
@@ -9,4 +19,4 @@ const produto1 = new Produto("Mouse", 50);
 
 produto1.preco = -100;
 
-console.log(produto1.preco);
+produto1.apresentar();

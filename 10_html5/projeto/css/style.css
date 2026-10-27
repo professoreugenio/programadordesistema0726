@@ -1,0 +1,39 @@
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        p {
+            font-style: italic;
+            color: #0e78c4;
+        }
+        * {
+            text-decoration: none;
+        }
+        #menulinks{
+            border:solid 1px #e7e7e7;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+
+
+        #menulinks a{
+            display: inline-block;            
+            background-color: #f0f0f0;
+            margin-right: 8px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            transition: 0.8s;
+            color: #000;
+        }
+        #menulinks a:hover {
+            background-color: #cccccc;
+            transition: 0.8s;
+            box-shadow: #cccccc 5px;
+        }
+
+        #menulinks a.ativo {
+            background-color: #0e78c4;
+            color: #fff;
+        }
