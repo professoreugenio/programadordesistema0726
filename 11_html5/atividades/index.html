@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Protótipo HTML5 do controle de estoque.">
+
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Controle de Estoque</h1>
+
+        <p>Sistema de gerenciamento de produtos</p>
+
+        <nav aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#informacoes">Informações</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Bem-vindo ao Sistema</h2>
+
+            <p>
+                Esta interface foi desenvolvida
+                utilizando HTML5.
+            </p>
+
+            <p>
+                O cadastro dinâmico será implementado
+                nas próximas aulas com JavaScript.
+            </p>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastrar Produto</h2>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="codigo">
+                        Código:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="codigo"
+                        name="codigo"
+                        min="1"
+                        step="1"
+                        required>
+                </p>
+
+                <p>
+                    <label for="nome">
+                        Nome:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        maxlength="100"
+                        required>
+                </p>
+
+                <p>
+                    <label for="preco">
+                        Preço:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="preco"
+                        name="preco"
+                        min="0"
+                        step="0.01"
+                        required>
+                </p>
+
+                <p>
+                    <label for="quantidade">
+                        Quantidade:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantidade"
+                        name="quantidade"
+                        min="0"
+                        step="1"
+                        required>
+                </p>
+
+                <p>
+                    <label for="categoria">
+                        Categoria:
+                    </label>
+
+                    <select
+                        id="categoria"
+                        name="categoria"
+                        required>
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option value="periferico">
+                            Periférico
+                        </option>
+
+                        <option value="monitor">
+                            Monitor
+                        </option>
+
+                        <option value="acessorio">
+                            Acessório
+                        </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="descricao">
+                        Descrição:
+                    </label>
+
+                    <textarea
+                        id="descricao"
+                        name="descricao"
+                        rows="4"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Enviar Cadastro
+                    </button>
+
+                    <button type="reset">
+                        Limpar
+                    </button>
+                </p>
+
+            </form>
+        </section>
+
+        <section id="produtos">
+
+            <h2>Produtos Cadastrados</h2>
+
+            <table>
+                <caption>
+                    Produtos de exemplo
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Quantidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Mouse</td>
+                        <td>R$ 50,00</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Teclado</td>
+                        <td>R$ 80,00</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>Monitor</td>
+                        <td>R$ 700,00</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="informacoes">
+            <h2>Informações</h2>
+
+            <p>
+                Projeto didático desenvolvido
+                no curso Programador de Sistemas.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Curso Programador de Sistemas</p>
+        <p>Aula 10 — HTML5</p>
+    </footer>
+
+</body>
+</html>

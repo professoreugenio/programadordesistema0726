@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM javascript</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Manipulando DOM com javascript</h1>
+        <div id="caixadetexto">
+            Vamos alterar este texto
+        </div>
+
+        <div class="caixadetexto">
+            Aqui mensagem de uma class
+        </div>
+
+        <div>
+            <button id="botao" type="button">botão texto1</button>
+            <button id="botao2" type="button">botão texto2</button>
+            <button id="botao3" type="button">Limpar</button>
+        </div>
+
+    </div>
+
+    <script>
+        const txt1 = document.querySelector("#caixadetexto");
+        const txt2 = document.querySelector(".caixadetexto");
+
+        const botao = document.querySelector("#botao");
+        const botao2 = document.querySelector("#botao2");
+        const botao3 = document.querySelector("#botao3");
+        let cont = 0;
+        botao.addEventListener("click", () => {
+            // alert("Você clicou no botão");
+            cont ++;
+            txt1.textContent = "Aqui novo texto "+cont
+        })
+        botao2.addEventListener("click", () => {
+            // alert("Você clicou no botão");
+            cont ++;
+            if(cont === 5) {
+                txt2.textContent = "Chegou ao limite "+cont;
+                return  
+            }
+            txt2.textContent = "clicou no botão "+cont
+        })
+        botao3.addEventListener("click", () => {
+            // alert("Você clicou no botão");
+            txt2.textContent = "limpou"
+            txt1.textContent = "limpou"
+            cont = 0
+        })
+
+    </script>
+</body>
+
+</html>
