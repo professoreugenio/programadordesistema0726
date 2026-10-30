@@ -19,8 +19,8 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
+    background: #fafafa;
+    color: #313131;
     line-height: 1.6;
 }
 
@@ -273,12 +273,70 @@ body {
 }
 
 button {
- padding: 12px 20px;
+ padding: 8px 20px;
     border: 0;
     border-radius: 8px;
-    background: var(--cor-primaria);
+    background: #306ccc;
     color: #ffffff;
     font: inherit;
     font-weight: 600;
     cursor: pointer;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
+#caixatxt1, #caixatxt2 {
+    border: solid 1px #ccc;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+#bt1 {
+ padding: 8px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #30cc35;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+#bt2 {
+ padding: 8px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #3061cc;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+#limpar {
+ padding: 8px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #cc4030;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.resposta {
+
+    background-color: #1d4ed8;
+    color: #cbd5e1;
+
+
 }
